@@ -10,7 +10,7 @@ export class TrCurrencyPipe implements PipeTransform {
       return "0,00 ₺";
     }
 
-    let para = value.toString().split(",")
+    let para = value.toString().split(".")
     let yeniTL = "";
     let tl = para[0];
     let kurus = "00";

@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   <input type="text" [(ngModel)]="number">
   <h3 [innerText]="number | trCurrencyPipe"></h3>
   `,
-  
+  styles: [`h3{
+    background-color: white;
+  }`]  
 })
 export class AppComponent {
   number: number = 5500;
